@@ -25,6 +25,8 @@ html, body { min-height: 100% }
 #gallery_3ea0fed2 div.galleryimgcontainer img {  width: 100%;  height: auto; box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.588235);  } 
 @media only screen and (max-width:520px) { #gallery_3ea0fed2 div.galleryimgcontainer { width: 50%; } } 
 @media only screen and (max-width:420px) { #gallery_3ea0fed2 div.galleryimgcontainer { width: 100%; } } 
+#gallery_3ea0fed2 img{  border: 1px solid transparent; } 
+#gallery_3ea0fed2 img:hover{ border: 1px solid #646464 !important; } 
 #button_48b5813c { vertical-align: bottom; border-radius: 10px; position:relative; display: inline-block; margin:0px 20px 0px 0px;width:96px; height:20px; background:none;  }
 #button_48b5813c:hover {  }
 #button_48b5813c:hover span { color:#EF6B3D; }
