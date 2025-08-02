@@ -1,0 +1,238 @@
+/* Allgemeine Seite */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(180deg, #fff9e8 0%, #dfdacb 100%);
+  color: #EB6068;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1E1E1E;
+  padding: 10px 20px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+header .logo span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #F5F1EB;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  font-size: 16px;
+  color: #F5F1EB;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+.presskit-btn:hover,
+.contact-btn:hover {
+  background: #EB6068;
+  color: #F5F1EB;
+}
+
+/* Hero Screenshot */
+.hero-screenshot {
+  display: block;
+  margin: 20px auto;
+  max-width: 300px; /* halb so groß wie vorher */
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #EB6068;
+}
+
+/* App-Store-Button */
+.download-center {
+  margin-bottom: 40px;
+}
+
+.app-store-btn img {
+  height: 50px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-radius 0.2s ease;
+}
+
+.app-store-btn img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+
+/* Coverflow Galerie */
+.coverflow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+}
+
+/* Coverflow Galerie */
+.coverflow img {
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 12px; /* abgerundete Ecken */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-snap-align: center;
+  cursor: pointer;
+}
+
+.coverflow img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Presskit Buttons */
+.presskit-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.presskit-btn {
+  background: transparent;
+  color: #EB6068;
+  border: 2px solid #EB6068;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.presskit-btn:hover {
+  background: #EB6068;
+  color: #F5F1EB;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #1E1E1E;
+  color: #F5F1EB;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.lightbox-nav {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 50px;
+}
+
+.lightbox-nav .prev,
+.lightbox-nav .next {
+  cursor: pointer;
+  padding: 20px;
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 24px;
+  }
+  
+  .hero-screenshot {
+    max-width: 200px; /* etwas kleiner auf iPhone */
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .coverflow img {
+    height: 200px; /* reduziert für kleine Bildschirme */
+  }
+
+  .app-store-btn img {
+    height: 45px;
+  }
+}
