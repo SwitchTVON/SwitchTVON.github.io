@@ -108,7 +108,7 @@ section {
 /* Coverflow Galerie */
 .coverflow {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   overflow-x: auto;
@@ -122,7 +122,7 @@ section {
   flex-shrink: 0;
   border-radius: 12px; /* abgerundete Ecken */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   cursor: pointer;
 }
 
